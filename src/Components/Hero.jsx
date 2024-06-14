@@ -17,20 +17,20 @@ const Hero = () => {
     }
 
   return (
-    <div className="px-20 mb-10 pb-20">
-        <div className="flex mt-14 mb-10 shadow-2xl px-10 py-8 bg-white rounded-xl ">
+    <div className="lg:px-20 lg:mb-10 lg:pb-20 md:pb-14 md:mb-8 md:px-14 px-6 mb-6 pb-10">
+        <div className="md:flex md:mt-14 md:mb-10 shadow-2xl md:px-10 md:py-8 bg-white rounded-xl max-md:flex-col mt-10 mb-8 px-6 py-5">
             <div className="flex flex-col gap-6 flex-1">
-                <h1 className="text-5xl font-bold text-blue-700">Food Generator</h1>
-                <p className="max-w-[50%] text-lg font-bold mb-14">Hayda l website la ayya hada byes2al ebno shu khater bibelak akel lyom (Hal 7ale bitsir kel yom ma3i), w ayya hada bedo yeni zid akle mish mawjode hon yebaat email mn tahet bl footer</p>
+                <h1 className="text-3xl md:text-5xl font-bold text-blue-700">Food Generator</h1>
+                <p className="md:max-w-[50%] text md:text-lg font-bold md:mb-14">Hayda l website la ayya hada byes2al ebno shu khater bibelak akel lyom (Hal 7ale bitsir kel yom ma3i), w ayya hada bedo yeni zid akle mish mawjode hon yebaat email mn tahet bl footer</p>
                 
-                <h1 className="text-4xl font-bold text-blue-700">All Dishes</h1>
-                <button className="px-6 py-4 bg-blue-700 rounded-2xl text-white font-bold w-[50%] mb-8">Dishes</button>
+                <h1 className="text-2xl md:text-4xl font-bold text-blue-700">All Dishes</h1>
+                <button className="px-4 py-3 md:px-6 md:py-4 bg-blue-700 rounded-2xl text-white font-bold md:w-[50%] md:mb-8 mb-2">Dishes</button>
 
-                <h1 className="text-4xl font-bold text-blue-700">Get Random Dish</h1>
-                <button className="px-6 py-4 bg-blue-700 rounded-2xl text-white font-bold w-[50%] mb-8" onClick={getRandomDish}>Random</button>
-
-                <h1 className="text-4xl font-bold text-blue-700">Search By ingredients</h1>
-                <button className="px-6 py-4 bg-blue-700 rounded-2xl text-white font-bold w-[50%] mb-8">Dishes Page</button>
+                <h1 className="text-2xl md:text-4xl font-bold text-blue-700">Search By ingredients</h1>
+                <button className="px-6 py-4 bg-blue-700 rounded-2xl text-white font-bold md:w-[50%] mb-2 md:mb-8">Dishes Page</button>
+                
+                <h1 className="text-2xl md:text-4xl font-bold text-blue-700">Get Random Dish</h1>
+                <button className="px-4 py-3 md:px-6 md:py-4 bg-blue-700 rounded-2xl text-white font-bold md:w-[50%] mb-8" onClick={getRandomDish}>Random</button>
             </div>
             
             <div className="flex-1">

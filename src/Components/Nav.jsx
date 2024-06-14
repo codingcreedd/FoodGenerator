@@ -20,8 +20,8 @@ export const Nav = () => {
     }
 
   return (
-    <nav className="flex justify-between items-center px-20 py-10 text-white">
-        <div className="flex items-center gap-10">
+    <nav className="flex justify-between items-center px-10 py-4 lg:px-20 lg:py-10 md:px-14 md:py-8 text-white">
+        <div className="hidden md:flex items-center gap-10">
             {
                 appNav.map(element => (
                     <div key={uuid()} className={`${element.toggled ? 'bg-blue-700 rounded-full text-white transition-all' : null} px-4 py-2 cursor-pointer `}
@@ -32,11 +32,11 @@ export const Nav = () => {
             }
         </div>
 
-        <p className="font-bold text-2xl ">
+        <p className="font-bold text-lg md:text-2xl ">
             AKLET EL BET
         </p>
 
-        <div className="flex items-center gap-6">
+        <div className="flex items-center md:gap-6 gap-3 text-lg md:text-2xl">
             {
                 !darkMode ? <i className='bx bxs-moon cursor-pointer text-2xl' onClick={() => {setDarkMode(!darkMode)}}></i> : <i className='bx bxs-sun cursor-pointer text-2xl text-yellow-400' onClick={() => {setDarkMode(!darkMode)}}></i>
             }
