@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  width: 100vw;
+  min-height: 100vh;
+  background: lightgray;
+}
+
+.pc::placeholder{
+  color: black;
+}
