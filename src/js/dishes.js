@@ -221,7 +221,7 @@ const dishes = [
         side: ["Fijel", "Potato", "Soda", "Other Drinks"],
         estimatedMinPrice: 8,
         estimatedMaxPrice: 11,
-        src: "ttps://i.ibb.co/SvPXN6Z/kibe-Meshwiye.jpg"
+        src: "https://i.ibb.co/SvPXN6Z/kibe-Meshwiye.jpg"
     },
     {
         name: 'Kibbe B laban',
