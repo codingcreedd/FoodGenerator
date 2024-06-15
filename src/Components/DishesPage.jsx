@@ -8,12 +8,12 @@ import dishes from "../js/dishes";
 let elements = [
     {
         title: "Ingredients",
-        list: ["chicken", "avocado", "mayyonaise", "bread", "flayfleh helwe", "chicken breasts", "burger bread", "tomato", "basal", "cream", "shmandar", "rice", "potato", "mushroom", "jebne", "Hamod", "Lahme", "Toom", "Khas", "Laban", "Zet", "Fool", "Hommos", "Maacarona", "Dura", "Eggs", "Koosa", "Pepperoni", "Zaytoon", "Zbib", "T7ine", "Tuna", "Rimmen", "Kizebra", "Khodar"]
+        list: ["Chicken", "Avocado", "mayyonaise", "bread", "Flayfleh Helwe", "Chicken breasts", "Burger Bread", "Tomato", "Basal", "Cream", "Shmandar", "Rice", "Potato", "Mushroom", "Jebne", "Hamod", "Lahme", "Toom", "Khas", "Laban", "Zet", "Fool", "Hommos", "Maacarona", "Dura", "Eggs", "Koosa", "Pepperoni", "Zaytoon", "Zbib", "T7ine", "Tuna", "Rimmen", "Kizebra", "Khodar"]
 
     },
     {
         title: "Side",
-        list: ["potato", "soda", "toom", "", "garlic", "toom", "kabis", "other drinks", "hamod", "lemon", "fattoush", "mayyonaise", "mayyonaise salad", "Laban", "Hommos", "bread", "Fijel", "Salata", "Khyar Bi Laban", "bread"]
+        list: ["Potato", "Soda", "Toom", "Garlic", "Toom", "Kabis", "Other Drinks", "Hamod", "Fattoush", "Mayyonaise", "Mayyonaise Salad", "Laban", "Hommos", "bread", "Fijel", "Salata", "Khyar Bi Laban", "Bread"]
     },
 ];
 
@@ -42,14 +42,21 @@ const Element = ({name, children}) => {
 const DishesPage = () => {
 
     const [dishesByIngredients, setDishesByIngredients] = useState([]);
+    const [openMenu, setOpenMenu] = useState(false);
 
-    const handleIngRender = (item) => {
-        let newItem = dishes.find((dish) => dish.ingredients.includes(item));
-        if(newItem){
-            setDishesByIngredients([...dishesByIngredients, newItem]);
-            console.log(dishesByIngredients)
+    const handleIngRender = (item, type) => {
+        let newArray = [...dishesByIngredients];
+        for (let i = 0; i < dishes.length; i++) {
+          if (type === 'ingredients' && dishes[i].ingredients.includes(item) &&!dishesByIngredients.includes(dishes[i])) {
+            newArray.push(dishes[i]);
+          }
+          else if(type === 'side' && dishes[i].side.includes(item) &&!dishesByIngredients.includes(dishes[i])){
+            newArray.push(dishes[i])
+          }
         }
-    }
+        
+        setDishesByIngredients([...newArray]);
+      };
 
     const renderDishes = () => {
         const dishesArray = [];
@@ -59,7 +66,7 @@ const DishesPage = () => {
             }
         }
 
-        return <div>
+        return <div className="grid lg:px-20 md:px-14  sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 gap-6 dark:bg-blue-950 dark:text-white py-4">
             {dishesArray}
         </div>
     }
@@ -68,8 +75,15 @@ const DishesPage = () => {
     <div className="flex flex-col bg-blue-950 overflow-hidden">
         <Nav />
 
-        <div className="flex lg:px-20 md:px-14 px-6 dark:bg-blue-950 dark:text-white py-4 border-t">
-            <div className="lg:flex flex-col hidden w-[20%]">
+        <div className="flex lg:px-20 md:px-14 px-6 dark:bg-blue-950 dark:text-white py-4 border-t max-lg:flex-col">
+            {
+                !openMenu ? (
+                    <i className='bx bx-menu text-center text-2xl text-white mb-10 hidden max-lg:block cursor-pointer' onClick={() => {setOpenMenu(!openMenu)}}></i>
+                ) : (
+                    <i className='bx bx-x text-center text-2xl text-white mb-10 hidden max-lg:block cursor-pointer' onClick={() => {setOpenMenu(!openMenu)}}></i>
+                )
+            }
+            <div className={`${!openMenu ? 'max-md:hidden' : ''} max-lg:flex max-lg:justify-between lg:flex-col lg:w-[20%]`}>
                 {
                     elements.map(element => (
                         <Element key={uuid()} name={element?.title}>
@@ -77,7 +91,7 @@ const DishesPage = () => {
                                 {
                                     element.list.map(item => (
                                         <div key={uuid()} className="flex items-center gap-4">
-                                            <input type="checkbox" className="text-2xl border-none" onClick={() => {handleIngRender(item)}}/>
+                                            <input type="checkbox" className="text-2xl border-none" onClick={() => {handleIngRender(item, `${element.title === 'Ingredients' ? 'ingredients' : 'side'}`)}}/>
                                             <p>{item}</p>
                                         </div>
                                     ))
