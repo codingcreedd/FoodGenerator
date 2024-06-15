@@ -1,6 +1,7 @@
 import { useState } from "react"
 import nav from '../js/nav.js';
 import {v4 as uuid} from 'uuid'
+import { Link } from "react-router-dom";
 
 export const Nav = () => {
 
@@ -32,9 +33,9 @@ export const Nav = () => {
             }
         </div>
 
-        <p className="font-bold text-lg md:text-2xl ">
+        <Link to="/" className="font-bold text-lg md:text-2xl ">
             AKLET EL BET
-        </p>
+        </Link>
 
         <div className="flex items-center md:gap-6 gap-3 text-lg md:text-2xl">
             {
