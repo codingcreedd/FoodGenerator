@@ -6,6 +6,7 @@ import ContextProvider from './Components/Context.jsx'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Error from './Components/Error.jsx';
 import { Dishes } from './Components/Dishes.jsx'
+import DishesPage from './Components/DishesPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -15,7 +16,13 @@ const router = createBrowserRouter([
   },
   {
     path: 'dishes',
-    element: <Dishes />
+    element: <Dishes />,
+    errorElement: <Error/>
+  },
+  {
+    path: 'dishbyingredient',
+    element: <DishesPage />,
+    errorElement: <Error />
   }
 
 ]);

@@ -15,7 +15,7 @@ export const Dishes = () => {
                 dishes.map(dish => (
                     <>
                         <Dish key={uuid()} name={dish?.name} ingredients={dish?.ingredients} side={dish?.side} estimatedMinPrice={dish?.estimatedMinPrice} estimatedMaxPrice={dish?.estimatedMaxPrice} src={dish?.src} />
-                        <hr className="h-[2px] mt-4 mb-4" />
+                        <hr className="h-[2px] mt-4 mb-4 bg-blue-950" />
                     </>
                 ))
             }
