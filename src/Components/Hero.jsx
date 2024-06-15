@@ -21,7 +21,7 @@ const Hero = () => {
         <div className="md:flex md:mt-14 md:mb-10 shadow-2xl md:px-10 md:py-8 bg-white rounded-xl max-md:flex-col mt-10 mb-8 px-6 py-5">
             <div className="flex flex-col gap-6 flex-1">
                 <h1 className="text-3xl md:text-5xl font-bold text-blue-700">Food Generator</h1>
-                <p className="md:max-w-[50%] text md:text-lg font-bold md:mb-14">Hayda l website la ayya hada byes2al ebno shu khater bibelak akel lyom (Hal 7ale bitsir kel yom ma3i), w ayya hada bedo yeni zid akle mish mawjode hon yebaat email mn tahet bl footer</p>
+                <p className="md:max-w-[50%] text-sm md:text-lg font-bold md:mb-14">Hayda l website la ayya hada byes2al ebno shu khater bibelak akel lyom (Hal 7ale bitsir kel yom ma3i), w ayya hada bedo yeni zid akle mish mawjode hon yebaat email mn tahet bl footer</p>
                 
                 <h1 className="text-2xl md:text-4xl font-bold text-blue-700">All Dishes</h1>
                 <button className="px-4 py-3 md:px-6 md:py-4 bg-blue-700 rounded-2xl text-white font-bold md:w-[50%] md:mb-8 mb-2">Dishes</button>
