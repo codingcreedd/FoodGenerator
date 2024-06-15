@@ -8,7 +8,7 @@ const dishes = [
         side: ["Potato", "Soda", "Toom"],
         estimatedMinPrice: 10,
         estimatedMaxPrice: 15,
-        src: ""
+        src: "https://i.ibb.co/KmcmV1X/fajita.jpg"
     },
     {
         name: 'Farrouj',
@@ -16,7 +16,7 @@ const dishes = [
         side: ["Soda", "Potato", "Garlic", "Toom", "Kabis, Other Drinks", "Hamod", "Lemon"],
         estimatedMinPrice: 8,
         estimatedMaxPrice: 12,
-        src: ""
+        src: "https://i.ibb.co/m5cpFqb/Farrouj.jpg"
     },
     {
         name: 'Shawarma',
@@ -24,7 +24,7 @@ const dishes = [
         side: ["Soda", "Potato", "Toom", "Other Drinks"],
         estimatedMinPrice: 8,
         estimatedMaxPrice: 15,
-        src: ""
+        src: "https://i.ibb.co/C2xzXfc/shawarma-Chicken.jpg"
     },
     {
         name: 'Chicken',
@@ -32,7 +32,7 @@ const dishes = [
         side: ["Potato", "Soda", "Other Drinks", "Toom"],
         estimatedMinPrice: 9,
         estimatedMaxPrice: 15,
-        src: ""
+        src: "https://i.ibb.co/XXPL8F6/chickenn.jpg"
     },
     {
         name: 'Chicken Burger',
@@ -56,7 +56,7 @@ const dishes = [
         side: ["Soda", "Other Drinks", "Fattoush", "Potato"],
         estimatedMinPrice: 13,
         estimatedMaxPrice: 20,
-        src: ""
+        src: "https://i.ibb.co/qWFGPd1/chicken-Avo.jpg"
     },
     {
         name: 'Chicken Cream',
@@ -80,7 +80,7 @@ const dishes = [
         side: ["Soda", "Other Drinks", "Potato"],
         estimatedMinPrice: 9,
         estimatedMaxPrice: 15,
-        src: ""
+        src: "https://i.ibb.co/Dtr9ywy/sfine.jpg"
     },
     {
         name: 'Chicken Wings',

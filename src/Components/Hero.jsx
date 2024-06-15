@@ -40,8 +40,8 @@ const Hero = () => {
                             name={randomDish?.name}
                             ingredients={randomDish?.ingredients}
                             side={randomDish?.side}
-                            minPrice={randomDish?.estimatedMinPrice}
-                            maxPrice={randomDish?.estimatedMaxPrice}
+                            estimatedMinPrice={randomDish?.estimatedMinPrice}
+                            estimatedMaxPrice={randomDish?.estimatedMaxPrice}
                             src={randomDish?.src}
                         />
                     ) : (
