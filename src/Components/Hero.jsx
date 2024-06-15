@@ -2,6 +2,7 @@ import { useContext } from "react"
 import dishes from "../js/dishes"
 import { Context } from "./Context"
 import { Dish } from "./Dish";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
 
@@ -24,7 +25,7 @@ const Hero = () => {
                 <p className="md:max-w-[50%] text-sm md:text-lg font-bold md:mb-14">Hayda l website la ayya hada byes2al ebno shu khater bibelak akel lyom (Hal 7ale bitsir kel yom ma3i), w ayya hada bedo yeni zid akle mish mawjode hon yebaat email mn tahet bl footer</p>
                 
                 <h1 className="text-2xl md:text-4xl font-bold text-blue-700">All Dishes</h1>
-                <button className="px-4 py-3 md:px-6 md:py-4 bg-blue-700 rounded-2xl text-white font-bold md:w-[50%] md:mb-8 mb-2">Dishes</button>
+                <Link to="dishes" className="px-4 py-3 md:px-6 md:py-4 bg-blue-700 rounded-2xl text-white font-bold md:w-[50%] md:mb-8 mb-2">Dishes</Link>
 
                 <h1 className="text-2xl md:text-4xl font-bold text-blue-700">Search By ingredients</h1>
                 <button className="px-6 py-4 bg-blue-700 rounded-2xl text-white font-bold md:w-[50%] mb-2 md:mb-8">Dishes Page</button>
