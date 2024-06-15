@@ -6,8 +6,8 @@ export const Dish = ({name, ingredients, side, minPrice, maxPrice, src}) => {
         <div className="relative md:mb-10 mb-6 rounded-xl">
             <img src={src} alt={name} border="0" className='rounded-xl w-full max-h-[700px] shadow-2xl'/>
             <div className="absolute md:bottom-16 md:left-10 bottom-6 left-5 text-white">
-                <h1 className="text-3xl font-bold mb-6">{name}</h1>
-                <p className="text-2xl font-bold">${minPrice} to ${maxPrice}</p>
+                <h1 className="text-xl md:text-3xl font-bold md:mb-6 mb-3">{name}</h1>
+                <p className="text-xl md:text-2xl font-bold">${minPrice} to ${maxPrice}</p>
             </div>
         </div>
 
