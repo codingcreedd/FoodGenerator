@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="flex-1 flex flex-col gap-6">
                 <h1 className="text-2xl md:text-4xl font-bold md:w-[50%]">Message</h1>
                 <h2 className="md:text-lg md:w-[55%]">W iza bedkon tehko ma3i private fikon tbaatoli email dghri ala moubayedmarwancoding@gmail.com</h2>
-                <button className="px-4 py-2 bg-blue-600 border border-black w-[30%] rounded-full">Send Email</button>
+                <button className="px-4 py-2 bg-blue-600 border border-black md:w-[30%] rounded-full">Send Email</button>
 
                 <h1 className="text-2xl md:text-4xl font-bold md:w-[50%] mt-10 md:mb-8 mb-4">Socials</h1>
                 <div className="flex items-center gap-10 md:gap-14">
@@ -42,22 +42,24 @@ const Footer = () => {
                     <p className="max-md:mb-10 max-md:text-sm">Menkhali l shakhes maktir yfaker bl akle libido yaamla, l aklet l mawjodin hon hine l aklet libtaamlon emi fa hakoni mtl ma elet krimel zid</p>
                 </div>
 
-                <div className="flex-1 flex-col">
-                    <h1 className="font-bold md:text-2xl mb-4">Other Pojects</h1>
-                    <p className="mb-2 max-md:text-sm">Weather App</p>
-                    <p className="mb-2 max-md:text-sm">Gemini Clone</p>
-                    <p className="mb-2 max-md:text-sm">Memory Card Game</p>
-                    <p className="mb-2 max-md:text-sm">eCommerce Websites</p>
-                    <p className="mb-2 max-md:text-sm">Resume Builder</p>
-                    <p className="mb-2 max-md:text-sm">Battleship Game</p>
-                </div>
+                <div className="flex md:gap-40 max-md:gap-10 max-md:mb-8">
+                    <div className="flex-1 flex-col">
+                        <h1 className="font-bold md:text-2xl mb-4">Other Pojects</h1>
+                        <p className="mb-2 max-md:text-sm">Weather App</p>
+                        <p className="mb-2 max-md:text-sm">Gemini Clone</p>
+                        <p className="mb-2 max-md:text-sm">Memory Card Game</p>
+                        <p className="mb-2 max-md:text-sm">eCommerce Websites</p>
+                        <p className="mb-2 max-md:text-sm">Resume Builder</p>
+                        <p className="mb-2 max-md:text-sm">Battleship Game</p>
+                    </div>
 
-                <div className="flex-1 flex flex-col">
-                    <h1 className="font-bold md:text-2xl mb-4 max-md:mt-6">Other</h1>
-                    <p className="mb-2 max-md:text-sm">Dishes</p>
-                    <p className="mb-2 max-md:text-sm">Resources</p>
-                    <p className="mb-2 max-md:text-sm">Blog</p>
-                    <p className="mb-10 max-md:text-sm">FAQ</p>
+                    <div className="flex-1 flex flex-col">
+                        <h1 className="font-bold md:text-2xl mb-4 ">Other</h1>
+                        <p className="mb-2 max-md:text-sm">Dishes</p>
+                        <p className="mb-2 max-md:text-sm">Resources</p>
+                        <p className="mb-2 max-md:text-sm">Blog</p>
+                        <p className="mb-10 max-md:text-sm">FAQ</p>
+                    </div>
                 </div>
 
                 <div className="flex-1 flex flex-col">
