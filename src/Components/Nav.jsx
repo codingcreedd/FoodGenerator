@@ -34,10 +34,10 @@ export const Nav = () => {
         <div className="hidden md:flex items-center gap-10">
             {
                 appNav.map(element => (
-                    <div key={uuid()} className={`${element.toggled ? 'bg-blue-700 rounded-full text-white transition-all' : null} px-4 py-2 cursor-pointer `}
+                    <Link to={element?.path} key={uuid()} className={`${element.toggled ? 'bg-blue-700 rounded-full text-white transition-all' : null} px-4 py-2 cursor-pointer `}
                     onClick={(e) => {handleNavClick(e)}}>
                         {element.title}        
-                    </div>
+                    </Link>
                 ))
             }
         </div>

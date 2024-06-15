@@ -13,7 +13,7 @@ const dishes = [
     {
         name: 'Farrouj',
         ingredients: ["Chicken"],
-        side: ["Soda", "Potato", "Garlic", "Toom", "Kabis, Other Drinks", "Hamod", "Lemon"],
+        side: ["Soda", "Potato", "Garlic", "Toom", "Kabi", "Other Drinks", "Hamod", "Lemon"],
         estimatedMinPrice: 8,
         estimatedMaxPrice: 12,
         src: "https://i.ibb.co/m5cpFqb/Farrouj.jpg"

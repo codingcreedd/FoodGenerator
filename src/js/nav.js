@@ -1,7 +1,8 @@
 let nav = [
     {
         title: 'Home',
-        toggled: true
+        toggled: true,
+        path: '/'
     }
     ,
     {

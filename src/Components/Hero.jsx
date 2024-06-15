@@ -28,7 +28,7 @@ const Hero = () => {
                 <Link to="dishes" className="px-4 py-3 md:px-6 md:py-4 bg-blue-700 rounded-2xl text-white font-bold md:w-[50%] md:mb-8 mb-2">Dishes</Link>
 
                 <h1 className="text-2xl md:text-4xl font-bold text-blue-700">Search By ingredients</h1>
-                <button className="px-6 py-4 bg-blue-700 rounded-2xl text-white font-bold md:w-[50%] mb-2 md:mb-8">Dishes Page</button>
+                <Link to="dishbyingredient" className="px-6 py-4 bg-blue-700 rounded-2xl text-white font-bold md:w-[50%] mb-2 md:mb-8">Dishes Page</Link>
                 
                 <h1 className="text-2xl md:text-4xl font-bold text-blue-700">Get Random Dish</h1>
                 <button className="px-4 py-3 md:px-6 md:py-4 bg-blue-700 rounded-2xl text-white font-bold md:w-[50%] mb-8" onClick={getRandomDish}>Random</button>
