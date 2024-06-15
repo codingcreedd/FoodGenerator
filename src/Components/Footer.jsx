@@ -53,7 +53,7 @@ const Footer = () => {
                 </div>
 
                 <div className="flex-1 flex flex-col">
-                    <h1 className="font-bold md:text-2xl mb-4">Other</h1>
+                    <h1 className="font-bold md:text-2xl mb-4 max-md:mt-6">Other</h1>
                     <p className="mb-2 max-md:text-sm">Dishes</p>
                     <p className="mb-2 max-md:text-sm">Resources</p>
                     <p className="mb-2 max-md:text-sm">Blog</p>
