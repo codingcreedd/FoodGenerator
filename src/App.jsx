@@ -5,7 +5,7 @@ import { Nav } from "./Components/Nav"
 function App() {
 
   return (
-    <div className="flex flex-col bg-blue-950">
+    <div className="flex flex-col bg-blue-950 overflow-hidden">
       <Nav />
       <Hero />
       <Footer />
