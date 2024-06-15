@@ -13,7 +13,7 @@ export const Dish = ({name, ingredients, side, estimatedMinPrice, estimatedMaxPr
 
         <div className='flex justify-center gap-20'>
             <div className="flex flex-col gap-6 mb-10">
-                <h1 className="text-2xl font-bold text-blue-700">Ingredients</h1>
+                <h1 className="text-2xl font-bold text-blue-700 dark:text-white">Ingredients</h1>
                 <div className="flex flex-col">
                     {
                         ingredients.map((ingredient ,index) => (
@@ -27,7 +27,7 @@ export const Dish = ({name, ingredients, side, estimatedMinPrice, estimatedMaxPr
             </div>
 
             <div className="flex flex-col gap-6">
-                <h1 className="text-2xl font-bold text-blue-700">Side</h1>
+                <h1 className="text-2xl font-bold text-blue-700 dark:text-white">Side</h1>
                 <div className="flex flex-col">
                     {
                         side.map((side_ ,index) => (

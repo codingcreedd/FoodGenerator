@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import ContextProvider from './Components/Context.jsx'
-import { BrowserRouter , createBrowserRouter, RouterProvider} from 'react-router-dom'
+import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Error from './Components/Error.jsx';
 import { Dishes } from './Components/Dishes.jsx'
 

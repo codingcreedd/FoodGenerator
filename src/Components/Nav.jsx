@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useRef, useState } from "react"
 import nav from '../js/nav.js';
 import {v4 as uuid} from 'uuid'
 import { Link } from "react-router-dom";
@@ -7,6 +7,15 @@ export const Nav = () => {
 
     const [appNav, setAppNav] = useState(nav);
     const [darkMode, setDarkMode] = useState(false);
+
+
+    const handleDarkChanges = () => {
+        document.body.classList.toggle('dark');
+    }
+
+    const handleLightChanges = () => {
+        document.body.classList.toggle('dark');
+    }
 
     const handleNavClick = (e) => {
         let newNav = nav.map(element => {
@@ -39,7 +48,7 @@ export const Nav = () => {
 
         <div className="flex items-center md:gap-6 gap-3 text-lg md:text-2xl">
             {
-                !darkMode ? <i className='bx bxs-moon cursor-pointer text-2xl' onClick={() => {setDarkMode(!darkMode)}}></i> : <i className='bx bxs-sun cursor-pointer text-2xl text-yellow-400' onClick={() => {setDarkMode(!darkMode)}}></i>
+                !darkMode ? <button className='bx bxs-moon cursor-pointer text-2xl' onClick={() => {setDarkMode(!darkMode); handleDarkChanges()}}></button> : <button className='bx bxs-sun cursor-pointer text-2xl text-yellow-400' onClick={() => {setDarkMode(!darkMode); handleLightChanges()}}></button>
             }
             <div>
                 {
