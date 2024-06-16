@@ -4,9 +4,9 @@ const Footer = () => {
         <div className="md:flex max-md:flex-col md:justify-between bg-pink-400 lg:px-20 lg:py-14 md:px-14 md:py-10 px-6 py-6">
             <div className="flex flex-col flex-1">
                 <h1 className="text-2xl md:text-4xl font-bold md:w-[50%] md:mb-20 mb-10">Hakuni Hon Kirmel Zid Aklet 3al App</h1>
-                <input type="text" name="name" id="name" placeholder="Name" className="md:w-[50%] bg-transparent border-b border-b-black pb-4 pc mb-8 outline-none" />
-                <input type="text" name="email" id="email" placeholder="Email" className="md:w-[50%] bg-transparent border-b border-b-black pb-4 pc mb-8 outline-none" />
-                <textarea name="" id="" cols="30" rows="10" className="md:w-[50%] bg-gray-300 rounded-xl px-4 py-4 pb-4 mb-8 outline-none"></textarea>
+                <input type="text" name="user_name" id="name" placeholder="Name" className="md:w-[50%] bg-transparent border-b border-b-black pb-4 pc mb-8 outline-none" />
+                <input type="text" name="user_email" id="email" placeholder="Email" className="md:w-[50%] bg-transparent border-b border-b-black pb-4 pc mb-8 outline-none" />
+                <textarea name="message" id="message" cols="30" rows="10" className="md:w-[50%] bg-gray-300 rounded-xl px-4 py-4 pb-4 mb-8 outline-none"></textarea>
                 <button className="bg-black text-white px-8 py-4 md:w-[50%] rounded-lg font-bold max-md:mb-10">Submit</button>
             </div>
 
