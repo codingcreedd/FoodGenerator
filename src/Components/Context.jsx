@@ -13,8 +13,14 @@ const ContextProvider = ({children}) => {
         src: "https://i.ibb.co/KmcmV1X/fajita.jpg"
     });
 
+    const [formState, setFormState] = useState({
+      loading: false,
+      error: false
+    });
+
     const states = {
-        randomDish, setRandomDish
+        randomDish, setRandomDish,
+        formState, setFormState
     }
 
   return (

@@ -1,19 +1,38 @@
+import { useContext } from "react"
+import Form from "./Form"
+import { Context } from "./Context"
+import Error from './Error';
+
 const Footer = () => {
+
+    const {formState} = useContext(Context);
+
+    if(formState.error){
+        return <Error />
+    }
+
+    if(formState.loading){
+        return (
+            <div className="flex items-center justify-center bg-white p-20">
+                <div className="w-6 h-6 border-4 border-gray-300 rounded-full animate-spin border-t-gray-900" />
+            </div>
+        )
+    }
+
   return (
     <div className="flex flex-col">
         <div className="md:flex max-md:flex-col md:justify-between bg-pink-400 lg:px-20 lg:py-14 md:px-14 md:py-10 px-6 py-6">
             <div className="flex flex-col flex-1">
                 <h1 className="text-2xl md:text-4xl font-bold md:w-[50%] md:mb-20 mb-10">Hakuni Hon Kirmel Zid Aklet 3al App</h1>
-                <input type="text" name="user_name" id="name" placeholder="Name" className="md:w-[50%] bg-transparent border-b border-b-black pb-4 pc mb-8 outline-none" />
-                <input type="text" name="user_email" id="email" placeholder="Email" className="md:w-[50%] bg-transparent border-b border-b-black pb-4 pc mb-8 outline-none" />
-                <textarea name="message" id="message" cols="30" rows="10" className="md:w-[50%] bg-gray-300 rounded-xl px-4 py-4 pb-4 mb-8 outline-none"></textarea>
-                <input type="submit" className="bg-black text-white px-8 py-4 md:w-[50%] rounded-lg font-bold max-md:mb-10" value="Send" />
+                <Form />
             </div>
 
             <div className="flex-1 flex flex-col gap-6">
                 <h1 className="text-2xl md:text-4xl font-bold md:w-[50%]">Message</h1>
                 <h2 className="md:text-lg md:w-[55%]">W iza bedkon tehko ma3i private fikon tbaatoli email dghri ala moubayedmarwancoding@gmail.com</h2>
-                <button className="px-4 py-2 bg-blue-600 border border-black md:w-[30%] rounded-full">Send Email</button>
+                <a href={`mailto:moubayedmarwancoding@gmail.com?subject=Contact Marwan from AKLETLEBET Website&body=Hello Moubayed,`} target="_blank" rel="noopener noreferrer">
+                    <button className="px-4 py-2 bg-blue-600 border border-black md:w-[30%] rounded-full">Send Email</button>
+                </a>
 
                 <h1 className="text-2xl md:text-4xl font-bold md:w-[50%] mt-10 md:mb-8 mb-4">Socials</h1>
                 <div className="flex items-center gap-10 md:gap-14">
