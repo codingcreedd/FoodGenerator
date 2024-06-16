@@ -7,7 +7,7 @@ const Footer = () => {
                 <input type="text" name="user_name" id="name" placeholder="Name" className="md:w-[50%] bg-transparent border-b border-b-black pb-4 pc mb-8 outline-none" />
                 <input type="text" name="user_email" id="email" placeholder="Email" className="md:w-[50%] bg-transparent border-b border-b-black pb-4 pc mb-8 outline-none" />
                 <textarea name="message" id="message" cols="30" rows="10" className="md:w-[50%] bg-gray-300 rounded-xl px-4 py-4 pb-4 mb-8 outline-none"></textarea>
-                <button className="bg-black text-white px-8 py-4 md:w-[50%] rounded-lg font-bold max-md:mb-10">Submit</button>
+                <button type="submit" className="bg-black text-white px-8 py-4 md:w-[50%] rounded-lg font-bold max-md:mb-10" value="Send"></button>
             </div>
 
             <div className="flex-1 flex flex-col gap-6">
